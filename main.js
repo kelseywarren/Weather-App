@@ -18,11 +18,12 @@ const wind = document.getElementById('windData');
 searchButton.addEventListener('click', (e) => {
   let city = searchInput.value;
   getWeatherData(city);
+  searchInput.value = '';
 });
 
 //function for getting weather data 
 function getWeatherData(city) {
-  const urlToFetch = `${apiBaseUrl}?q=${city}&appid=${apiKey}&units=imperial`;
+  const urlToFetch = `${apiBaseUrl}?q=${city},US&appid=${apiKey}&units=imperial`;
   
   fetch(urlToFetch)
       .then((response) => response.json())

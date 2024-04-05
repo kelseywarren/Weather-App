@@ -20,8 +20,12 @@ searchButton.addEventListener('click', (e) => {
   if(city.length > 0){
     e.preventDefault();
     getWeatherData(city);
+  } else {
+    e.preventDefault();
+    alert('please enter city')
   }
   searchInput.value = '';
+
 });
 
 //function for getting weather data 
@@ -39,7 +43,7 @@ function getWeatherData(city) {
           humidity.innerHTML = `${data.main.humidity}%`
 
           document.getElementById('wicon').src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-          
+
           wind.innerHTML = `${Math.floor(data.wind.speed)}mph`
       })
       .catch((error) => {

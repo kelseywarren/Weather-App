@@ -20,8 +20,12 @@ searchButton.addEventListener('click', (e) => {
   if(city.length > 0){
     e.preventDefault();
     getWeatherData(city);
+  } else {
+    e.preventDefault();
+    alert('please enter city')
   }
   searchInput.value = '';
+
 });
 
 //function for getting weather data 
@@ -32,10 +36,15 @@ function getWeatherData(city) {
       .then((response) => response.json())
       .then((data) => {
           cityName.innerHTML = `${data.name}`;
-          temperature.innerHTML = `${data.main.temp}&deg`; 
+          temperature.innerHTML = `${Math.round(data.main.temp)}&deg`; 
+
           condition.innerHTML = `${data.weather[0].description}`;
+
           humidity.innerHTML = `${data.main.humidity}%`
-          wind.innerHTML = `${data.wind.speed}mph`
+
+          document.getElementById('wicon').src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+
+          wind.innerHTML = `${Math.floor(data.wind.speed)}mph`
       })
       .catch((error) => {
           alert('Invalid city entry');

@@ -3,10 +3,17 @@
 <h2>Purpose</h2>
 <p>This project was created in order to get some hands on experience utilizing an API. </p>
 <h2>Features</h2>
-<ul>
-  <li>Search by city</li>
-  <li>Current temperature</li>
-  <li>Current conditions</li>
-  <li>Current humidity percentage</li>
-  <li>Curernt wind speed</li>
-</ul>
+  <ul>
+    <li>Search by city</li>
+    <li>Current temperature</li>
+    <li>Current conditions</li>
+    <li>Current humidity percentage</li>
+    <li>Curernt wind speed</li>
+  </ul>
+<h2>Technologies</h2>
+  <ul>
+    <li>Javascript</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Open Weather API</li>
+  </ul>

@@ -10,8 +10,10 @@
   <body>
     <main>
       <div class="container">
+        <form id="searchBar">
            <input type="text" id="searchInput" placeholder="Enter city... ">
            <button id="searchButton">Search</button>
+        </form>
        
             <div id="cityName"> 
             </div>
@@ -24,13 +26,15 @@
     <section class="details">
       <div class="conditions">
         <p id="conditionData"></p>
+        <img id="wicon" src="null">
+        
       </div>
       <div class="conditions">
-        <p id="humidTitle">Humidity</p>
+        <p class="conditionTitle">humidity</p>
         <p id="humidData"></p>
       </div>
       <div class="conditions">
-        <p id="windTitle">Wind</p>
+        <p class="conditionTitle">wind</p>
         <p id="windData"></p>
       </div>
     </section>

@@ -33,8 +33,13 @@ function getWeatherData(city) {
       .then((data) => {
           cityName.innerHTML = `${data.name}`;
           temperature.innerHTML = `${Math.round(data.main.temp)}&deg`; 
+
           condition.innerHTML = `${data.weather[0].description}`;
+
           humidity.innerHTML = `${data.main.humidity}%`
+
+          document.getElementById('wicon').src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+          
           wind.innerHTML = `${Math.floor(data.wind.speed)}mph`
       })
       .catch((error) => {

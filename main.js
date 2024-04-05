@@ -32,10 +32,10 @@ function getWeatherData(city) {
       .then((response) => response.json())
       .then((data) => {
           cityName.innerHTML = `${data.name}`;
-          temperature.innerHTML = `${data.main.temp}&deg`; 
+          temperature.innerHTML = `${Math.round(data.main.temp)}&deg`; 
           condition.innerHTML = `${data.weather[0].description}`;
           humidity.innerHTML = `${data.main.humidity}%`
-          wind.innerHTML = `${data.wind.speed}mph`
+          wind.innerHTML = `${Math.floor(data.wind.speed)}mph`
       })
       .catch((error) => {
           alert('Invalid city entry');

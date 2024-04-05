@@ -17,7 +17,10 @@ const wind = document.getElementById('windData');
 //event for weather data
 searchButton.addEventListener('click', (e) => {
   let city = searchInput.value;
-  getWeatherData(city);
+  if(city.length > 0){
+    e.preventDefault();
+    getWeatherData(city);
+  }
   searchInput.value = '';
 });
 
@@ -42,6 +45,5 @@ function getWeatherData(city) {
 
 //default display
 getWeatherData(city);
-
 
 

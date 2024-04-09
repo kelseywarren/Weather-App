@@ -85,7 +85,10 @@ function getForecast(lat, lon) {
     .then((data) => {
       //loop to iterate the max temp for next 5 days
       for(i = 0; i < 5; i++){
-        document.getElementById("day" + (i+1) + "Temp").innerHTML = `${Math.round(data.daily[i].temp.max)}&deg`
+        document.getElementById("day" + (i+1) + "TempMax").innerHTML = "H: " + `${Math.round(data.daily[i].temp.max)}&deg`
+
+        document.getElementById("day" + (i+1) + "TempMin").innerHTML = "L: " + `${Math.round(data.daily[i].temp.min)}&deg`
+
       };
       //loop to iterate the weather icon for next 5 days
       for(i = 0; i < 5; i++){

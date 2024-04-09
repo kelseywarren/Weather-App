@@ -3,18 +3,33 @@
     background-color: antiquewhite;
 }
 
+html, body, .container, #searchBar {
+  background-image: url("../Images/Soft-Clouds-and-Blue-Sky-patternpictures-35200608.jpg"); 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 #searchBar {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  background: transparent;
 }
 
 .searchStyle {
   border: 1px solid white;
   height: auto;
   border-radius: 3px;
+  background: transparent;
+  color: white;
+}
+
+::placeholder {
+  color: white;
 }
 
 #searchInput:focus { 
@@ -49,6 +64,7 @@
     font-size: 30px;
     font-weight: bold;
     
+    
 }
 
 .currentWeather {
@@ -63,6 +79,7 @@
   background-color: #FCFEFF;
   gap: 50px;
   flex-wrap: wrap;
+
 
 }
 

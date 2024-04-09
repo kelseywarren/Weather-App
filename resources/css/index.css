@@ -18,6 +18,7 @@ html, body, .container, #searchBar {
   margin-left: auto;
   margin-right: auto;
   background: transparent;
+  height: 24px;
 }
 
 .searchStyle {
@@ -27,6 +28,12 @@ html, body, .container, #searchBar {
   background: transparent;
   color: white;
 }
+
+#searchInput {
+  width: 175px;
+  font-size: 12px;
+}
+
 
 ::placeholder {
   color: white;

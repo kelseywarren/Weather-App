@@ -16,7 +16,7 @@
   <li>7 day forecast with min max values</li>
   <li>UI upgrades</li>
   <li>More weather info options</li>
-  <li>locations outside the US</li>
+  <li>Locations outside the US</li>
 </ul>
 <h2>Technologies</h2>
   <ul>

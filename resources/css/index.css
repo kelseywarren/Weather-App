@@ -51,7 +51,7 @@
     
 }
 
-.details {
+.currentWeather {
   display: flex;
   justify-content: center;
   margin-top: 1px;
@@ -82,5 +82,37 @@
   font-size: 18px;
   font-weight: bold;
   background-color: #F9FDFF;
+}
+
+.forecastContainer {
+  border: 1px solid white;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  ;
+
+}
+
+#forecastTitle {
+  font-size: 26px;
+  text-align: center;
+}
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 5px;
+  gap: 55px;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  background-color: #FFFBFA;
+}
+
+#forecastTitle, .dayOfWeek, .tempForecast, .days, .wiconeForecast{
+  background-color: #FFFBFA;
 }
 

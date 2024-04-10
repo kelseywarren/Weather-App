@@ -9,25 +9,19 @@
     <li>Current conditions</li>
     <li>Current humidity percentage</li>
     <li>Current wind speed</li>
-    <li>5 day forecast</li>
+    <li>5 day forecast with min and max  values</li>
   </ul>
 <h3>New Features to Come</h3>
 <ul>
-  <li>7 day forecast with min max values</li>
-  <li>UI upgrades</li>
   <li>More weather info options</li>
-  <li>Locations outside the US</li>
+  <li>Expand to all locations outside of the US</li>
   <li>Search autocomplete</li>
 </ul>
 <h2>Technologies</h2>
   <ul>
-    <li>Javascript</li>
+    <li>JavaScript</li>
     <li>HTML</li>
     <li>CSS</li>
     <li>Open Weather API</li>
   </ul>
 
-<h2>Notes</h2>
-  <ul>
-    <li>Realized the value of utilizing Node.js when developing a project. Very useful for testing if the API calls were succesful, viewing the API data, and testing functions involving data received from the API </li>
-  </ul>

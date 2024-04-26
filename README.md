@@ -22,6 +22,3 @@ This project was created in order to get experience with utilizing an API, and d
   </ul>
 
 
-
-### Note 
-Project is in incomplete status currently

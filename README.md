@@ -22,4 +22,5 @@ This project was created in order to get experience with:
 ## Notes
 Main focal point of project is learning how to fetch and display data from an API. Simple (minimalistic) styling applied.
 
+## Preview
 <img src="https://github.com/kelseywarren/Weather-App/assets/157708983/7bb81501-8037-41b9-a952-549087ec0f5a" width="450">
